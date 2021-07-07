@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_add_curso_alumno_titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AÑADIR CURSO"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_add_curso_alumno_titulo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ti_add_curso_alumno_codigo">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CODIGO Ejemplo :QI6J"
+        android:id="@+id/et_add_curso_alumno_codigo"
+        android:textStyle="normal|bold"
+        android:singleLine="true"
+        android:maxLength="4"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_below="@+id/ti_add_curso_alumno_codigo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bttn_add_curso_añadir"
+        android:layout_below="@+id/et_add_curso_alumno_codigo"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorFondoLogin"
+        android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>

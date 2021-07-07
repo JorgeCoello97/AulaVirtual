@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:background="@color/colorFondoLogin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_aula_virtual"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="AulaVirtual 1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dialog_acerca_de_title_aplicacion"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:text="Hecho por Jorge Coello DAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dialog_acerca_de_autor"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tv_dialog_acerca_de_title_aplicacion"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

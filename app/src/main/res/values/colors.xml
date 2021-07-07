@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#455a64</color>
+    <color name="colorPrimaryDark">#37474F</color>
+    <color name="colorAccent">#eceff1</color>
+    <color name="colorFondoLogin">#FF1A2126</color>
+    <color name="colorPrimaryRojo">#F44336</color>
+    <color name="colorPrimaryDarkRojo">#D32F2F</color>
+    <color name="colorAccentRojo">#FF8A80</color>
+    <color name="colorPrimaryAmarillo">#FFEB3B</color>
+    <color name="colorPrimaryDarkAmarillo">#FBC02D</color>
+    <color name="colorAccentAmarillo">#FFFF8D</color>
+    <color name="colorPrimaryOrange">#FF5722</color>
+    <color name="colorPrimaryDarkOrange">#E64A19</color>
+    <color name="colorAccentOrange">#FF9E80</color>
+    <color name="colorPrimaryLime">#CDDC39</color>
+    <color name="colorPrimaryDarkLime">#AFB42B</color>
+    <color name="colorAccentLime">#F4FF81</color>
+    <color name="colorPrimaryTeal">#009688</color>
+    <color name="colorPrimaryDarkTeal">#00796B</color>
+    <color name="colorAccentTeal">#A7FFEB</color>
+    <color name="colorNeutro">#ffcf9c</color>
+</resources>

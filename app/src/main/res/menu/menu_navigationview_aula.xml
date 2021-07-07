@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item android:title="CONFIGURACIÓN PERSONAL">
+            <menu>
+                <item
+                    android:id="@+id/menu_nv_aula_item_perfil"
+                    android:title="Tu Perfil"/>
+                <item android:id="@+id/menu_nv_aula_item_darte_de_baja"
+                    android:title="Darte de baja"/>
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="AULA VIRTUAL">
+            <menu>
+                <item android:id="@+id/menu_nv_aula_item_cursos"
+                    android:title="Listado de Cursos"/>
+
+                <item android:id="@+id/menu_nv_aula_item_alumnos"
+                    android:title="Listado de Alumnos"/>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="ADMINISTRACIÓN AULA VIRTUAL">
+            <menu>
+                <item android:id="@+id/menu_nv_aula_item_admin_cursos"
+                    android:title="Administrador Cursos"/>
+
+                <item android:id="@+id/menu_nv_aula_item_admin_alumnos"
+                    android:title="Administrador Asignaturas"/>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/menu_nv_aula_item_cerrar_sesion"
+            android:title="Cerrar Sesión"/>
+    </group>
+</menu>

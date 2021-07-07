@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jorch.proyecto.aulavirtual.ui.CrearAsignaturasActivity">
+    <Spinner
+        android:spinnerMode="dialog"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_imagen_asignatura"
+        android:layout_below="@+id/tv_crear_asignatura_title"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="Imagen de la Asignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_asignatura_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_hora_fin"
+        android:hint="Hora Final"
+        android:layout_below="@+id/et_crear_asignatura_hora_inicio"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="HORA FINAL:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_asignatura_title_hora_fin"
+        android:layout_alignBaseline="@+id/et_crear_asignatura_hora_fin"
+        android:layout_alignBottom="@+id/et_crear_asignatura_hora_fin"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tv__crear_asignatura_title_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE:"
+        android:layout_marginTop="26dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/spinner_imagen_asignatura"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_nombre"
+        android:hint="Nombre Curso"
+        android:layout_alignBaseline="@+id/tv__crear_asignatura_title_nombre"
+        android:layout_alignBottom="@+id/tv__crear_asignatura_title_nombre"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_fecha_inicial"
+        android:hint="Fecha Inicial"
+        android:layout_below="@+id/et_crear_asignatura_nombre"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="FECHA INICIAL:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_asignatura_title_fecha_inicial"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/et_crear_asignatura_fecha_inicial"
+        android:layout_alignBottom="@+id/et_crear_asignatura_fecha_inicial"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_fecha_final"
+        android:hint="Fecha Final"
+        android:layout_below="@+id/et_crear_asignatura_fecha_inicial"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="FECHA FINAL:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_asignatura_title_fecha_fin"
+        android:layout_alignBaseline="@+id/et_crear_asignatura_fecha_final"
+        android:layout_alignBottom="@+id/et_crear_asignatura_fecha_final"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="HORA INICIAL:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_asignatura_title_hora_inicio"
+        android:layout_alignBaseline="@+id/et_crear_asignatura_hora_inicio"
+        android:layout_alignBottom="@+id/et_crear_asignatura_hora_inicio"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_descripcion"
+        android:layout_width="match_parent"
+        android:hint="Descripcion de la asignatura"
+        android:maxLines="8"
+        android:layout_below="@+id/tv_crear_asignatura_title_descripcion"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_crear_asignatura_title_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPCIÓN:"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/et_crear_asignatura_hora_fin"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/et_crear_asignatura_hora_inicio"
+        android:hint="Hora Inicial"
+        android:layout_below="@+id/et_crear_asignatura_fecha_final"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

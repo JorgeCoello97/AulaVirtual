@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="23dp">
+
+    <TextView
+        android:text="REGISTRO USUARIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_cuenta_titulo"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:id="@+id/sp_crear_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_rol"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_crear_cuenta_titulo"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_crear_cuenta_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_crear_cuenta"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/CrearCuentaTextField">
+
+        <EditText
+            android:id="@+id/et_crear_cuenta_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_crear_cuenta_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@+id/til_crear_cuenta_usuario"
+        android:layout_alignParentStart="true"
+        android:theme="@style/CrearCuentaTextField">
+        <EditText
+            android:id="@+id/et_crear_cuenta_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:maxLength="15"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_crear_cuenta_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@+id/til_crear_cuenta_password"
+        android:layout_alignParentStart="true"
+        android:theme="@style/CrearCuentaTextField">
+        <EditText
+            android:id="@+id/et_crear_cuenta_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:maxLength="50"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bttn_crear_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR CUENTA"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/til_crear_cuenta_correo"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:text="SELECCIONA ROL:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_crear_cuenta_titulo_rol"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        android:layout_alignBaseline="@+id/sp_crear_cuenta"
+        android:layout_alignBottom="@+id/sp_crear_cuenta"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
